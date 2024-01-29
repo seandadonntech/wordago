@@ -8,12 +8,15 @@ import (
 )
 
 func main() {
-	var amount int
+	var amount, wordLength int
 	var createFile bool
 	rand.Seed(time.Now().UnixNano())
 
 	fmt.Println("ENTER THE NUMBER OF WORDS TO GENERATE:")
 	fmt.Scan(&amount)
+
+	fmt.Println("Specify the length of each word:")
+	fmt.Scan(&wordLength)
 
 	var includeUppercase, includeLowercase, includeNumbers, includeSymbols bool
 	fmt.Println("Include Uppercase letters? (true/false):")
@@ -31,7 +34,7 @@ func main() {
 
 	var words []string
 	for i := 0; i < amount; i++ {
-		word := generateRandomWord(charSets)
+		word := generateRandomWord(charSets, wordLength)
 		words = append(words, word)
 	}
 
@@ -78,9 +81,9 @@ func buildCharSets(uppercase, lowercase, numbers, symbols bool) []string {
 	return charSets
 }
 
-func generateRandomWord(charSets []string) string {
+func generateRandomWord(charSets []string, length int) string {
 	var word string
-	for i := 0; i < 10; i++ {
+	for i := 0; i < length; i++ {
 		charSet := charSets[rand.Intn(len(charSets))]
 		randomChar := charSet[rand.Intn(len(charSet))]
 		word += string(randomChar)

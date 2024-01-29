@@ -19,5 +19,6 @@
     "titleBar.inactiveBackground": "#42b56799",
     "titleBar.inactiveForeground": "#15202b99"
   },
-  "peacock.color": "#42b567"
+  "peacock.color": "#42b567",
+  "go.toolsEnvVars": {}
 }
