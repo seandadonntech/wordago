@@ -15,8 +15,8 @@ This command-line application generates random words based on user preferences a
 The Random Word Generator is a simple Go program that generates random words with options to include uppercase letters, lowercase letters, numbers, and symbols. It provides a flexible way to customize the generated words based on your preferences.
 
 ## Usage
-
-1. Run the program using the command: `go run main.go`.
+git pull https://github.com/seandadonntech/wordago
+1. Run the program using the command: `go run word.go`.
 2. Enter the number of words you want to generate.
 3. Answer the prompts to include uppercase letters, lowercase letters, numbers, and symbols.
 4. Choose whether to create a file to store the generated words.
