@@ -1,4 +1,4 @@
-# Random Word Generator
+# wordago
 
 This command-line application generates random words based on user preferences and allows you to save them to a file.
 
