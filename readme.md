@@ -31,7 +31,7 @@ Make sure you have Go (Golang) installed on your system.
 ```bash
 go run word.go
 
-go build word.go
+go build word.go to compile
 
 
 
